@@ -1,0 +1,514 @@
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (130.3ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36mSQL (69.3ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+Migrating to CreatePosts (20111003221012)
+  [1m[36mSQL (0.9ms)[0m  [1mCREATE TABLE "posts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "content" text, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20111003221012')
+  [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("posts")
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from service at /home/igor/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:111)
+
+
+Started GET "/posts" for 127.0.0.1 at 2011-10-03 19:17:29 -0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/_form.html.erb (49.5ms)
+Rendered posts/index.html.erb within layouts/application (52.1ms)
+Completed 200 OK in 99ms (Views: 54.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2011-10-03 19:18:49 -0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/_form.html.erb (4.9ms)
+Rendered posts/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 15ms (Views: 10.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2011-10-03 19:23:42 -0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/_form.html.erb (21.7ms)
+Rendered posts/index.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 32ms (Views: 26.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2011-10-03 19:26:49 -0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/_form.html.erb (4.9ms)
+Rendered posts/_posts.html.erb (0.4ms)
+Rendered posts/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 16ms (Views: 10.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2011-10-03 19:27:46 -0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/_form.html.erb (5.0ms)
+Rendered posts/_posts.html.erb (0.4ms)
+Rendered posts/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 16ms (Views: 10.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2011-10-03 19:27:47 -0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/_form.html.erb (4.8ms)
+Rendered posts/_posts.html.erb (0.4ms)
+Rendered posts/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 15ms (Views: 9.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2011-10-03 19:27:48 -0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/_form.html.erb (4.8ms)
+Rendered posts/_posts.html.erb (0.5ms)
+Rendered posts/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 16ms (Views: 10.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2011-10-03 19:30:08 -0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/_form.html.erb (4.8ms)
+Rendered posts/_posts.html.erb (0.4ms)
+Rendered posts/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 33ms (Views: 10.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2011-10-03 19:32:25 -0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/_form.html.erb (5.1ms)
+Rendered posts/_posts.html.erb (0.4ms)
+Rendered posts/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 16ms (Views: 10.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2011-10-03 19:32:33 -0300
+
+AbstractController::ActionNotFound (The action 'new' could not be found for PostsController):
+  
+
+Rendered /home/igor/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (1.8ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2011-10-03 19:36:21 -0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/_form.html.erb (4.9ms)
+Rendered posts/_posts.html.erb (0.4ms)
+Rendered posts/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 16ms (Views: 10.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2011-10-03 19:36:26 -0300
+
+AbstractController::ActionNotFound (The action 'new' could not be found for PostsController):
+  
+
+Rendered /home/igor/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2011-10-03 19:36:53 -0300
+  Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZzU+aIwkmkZEq3B4ehxEMcBjEWQMXW/HQx15FEh4Zy8=", "post"=>{"title"=>"Teste", "content"=>"Javascript obstrutivo, com formularios remoto"}, "commit"=>"Create Post"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "content", "created_at", "updated_at") VALUES ('Teste', 'Javascript obstrutivo, com formularios remoto', '2011-10-03 22:36:53.716798', '2011-10-03 22:36:53.716798')[0m
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 172ms
+
+
+Started GET "/posts" for 127.0.0.1 at 2011-10-03 19:36:53 -0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/_form.html.erb (6.8ms)
+Rendered posts/_posts.html.erb (1.3ms)
+Rendered posts/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 20ms (Views: 14.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2011-10-03 19:36:59 -0300
+
+AbstractController::ActionNotFound (The action 'show' could not be found for PostsController):
+  
+
+Rendered /home/igor/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/posts/1/edit" for 127.0.0.1 at 2011-10-03 19:37:02 -0300
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 1 LIMIT 1
+Completed 500 Internal Server Error in 19ms
+
+ActionView::MissingTemplate (Missing template posts/edit with {:handlers=>[:erb, :rjs, :builder, :rhtml, :rxml], :formats=>[:html], :locale=>[:en, :en]} in view paths "/home/igor/workspace/exercicios/ajax_on_rails/app/views"):
+  
+
+Rendered /home/igor/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (1.4ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2011-10-03 19:37:34 -0300
+  Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZzU+aIwkmkZEq3B4ehxEMcBjEWQMXW/HQx15FEh4Zy8=", "post"=>{"title"=>"novo teste", "content"=>"novo teste javascript"}, "commit"=>"Create Post"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "posts" ("title", "content", "created_at", "updated_at") VALUES ('novo teste', 'novo teste javascript', '2011-10-03 22:37:34.689611', '2011-10-03 22:37:34.689611')
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 136ms
+
+
+Started GET "/posts" for 127.0.0.1 at 2011-10-03 19:37:34 -0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/_form.html.erb (6.2ms)
+Rendered posts/_posts.html.erb (1.9ms)
+Rendered posts/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 20ms (Views: 13.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2011-10-03 19:37:49 -0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/_form.html.erb (5.1ms)
+Rendered posts/_posts.html.erb (1.9ms)
+Rendered posts/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 17ms (Views: 11.8ms | ActiveRecord: 0.3ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from service at /home/igor/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:111)
+
+
+Started GET "/posts" for 127.0.0.1 at 2011-10-04 08:12:04 -0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/_form.html.erb (65.7ms)
+Rendered posts/_posts.html.erb (2.0ms)
+Rendered posts/index.html.erb within layouts/application (103.9ms)
+Completed 200 OK in 178ms (Views: 127.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2011-10-04 08:12:17 -0300
+  Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HbWX2T32KGXOesRj6uBJzpO0+u0cW9zIbx5+3mUB5KA=", "post"=>{"title"=>"Joao e Maria", "content"=>"Sao muito amigos"}, "commit"=>"Create Post"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "posts" ("title", "content", "created_at", "updated_at") VALUES ('Joao e Maria', 'Sao muito amigos', '2011-10-04 11:12:17.174157', '2011-10-04 11:12:17.174157')
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 317ms
+
+
+Started GET "/posts" for 127.0.0.1 at 2011-10-04 08:12:17 -0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/_form.html.erb (6.0ms)
+Rendered posts/_posts.html.erb (4.3ms)
+Rendered posts/index.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 23ms (Views: 16.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts/1/edit" for 127.0.0.1 at 2011-10-04 08:12:23 -0300
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 1 LIMIT 1[0m
+Completed 500 Internal Server Error in 62ms
+
+ActionView::MissingTemplate (Missing template posts/edit with {:handlers=>[:erb, :rjs, :builder, :rhtml, :rxml], :formats=>[:html], :locale=>[:en, :en]} in view paths "/home/igor/workspace/exercicios/ajax_on_rails/app/views"):
+  
+
+Rendered /home/igor/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.6ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2011-10-04 08:12:33 -0300
+
+AbstractController::ActionNotFound (The action 'show' could not be found for PostsController):
+  
+
+Rendered /home/igor/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/posts/1/edit" for 127.0.0.1 at 2011-10-04 08:12:59 -0300
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."id" = 1 LIMIT 1[0m
+Completed 500 Internal Server Error in 9ms
+
+ActionView::MissingTemplate (Missing template posts/edit with {:handlers=>[:erb, :rjs, :builder, :rhtml, :rxml], :formats=>[:html], :locale=>[:en, :en]} in view paths "/home/igor/workspace/exercicios/ajax_on_rails/app/views"):
+  
+
+Rendered /home/igor/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.6ms)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2011-10-04 08:14:07 -0300
+
+AbstractController::ActionNotFound (The action 'show' could not be found for PostsController):
+  
+
+Rendered /home/igor/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2011-10-04 08:17:35 -0300
+  Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HbWX2T32KGXOesRj6uBJzpO0+u0cW9zIbx5+3mUB5KA=", "post"=>{"title"=>"asasasasas", "content"=>""}, "commit"=>"Create Post"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+Completed 500 Internal Server Error in 12ms
+
+ActionView::MissingTemplate (Missing template posts/create with {:handlers=>[:erb, :rjs, :builder, :rhtml, :rxml], :formats=>[:html], :locale=>[:en, :en]} in view paths "/home/igor/workspace/exercicios/ajax_on_rails/app/views"):
+  
+
+Rendered /home/igor/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.5ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2011-10-04 08:18:58 -0300
+  Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HbWX2T32KGXOesRj6uBJzpO0+u0cW9zIbx5+3mUB5KA=", "post"=>{"title"=>"asasasasas", "content"=>"hjhjhkjhkjhjh"}, "commit"=>"Create Post"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "posts" ("title", "content", "created_at", "updated_at") VALUES ('asasasasas', 'hjhjhkjhkjhjh', '2011-10-04 11:18:58.033107', '2011-10-04 11:18:58.033107')
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 103ms
+
+
+Started GET "/posts" for 127.0.0.1 at 2011-10-04 08:18:58 -0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/_form.html.erb (4.9ms)
+Rendered posts/_posts.html.erb (2.3ms)
+Rendered posts/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 18ms (Views: 11.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts/4" for 127.0.0.1 at 2011-10-04 08:19:07 -0300
+
+AbstractController::ActionNotFound (The action 'show' could not be found for PostsController):
+  
+
+Rendered /home/igor/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2011-10-04 08:19:27 -0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/_form.html.erb (4.9ms)
+Rendered posts/_posts.html.erb (18.7ms)
+Rendered posts/index.html.erb within layouts/application (27.2ms)
+Completed 200 OK in 36ms (Views: 29.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/4" for 127.0.0.1 at 2011-10-04 08:19:30 -0300
+
+AbstractController::ActionNotFound (The action 'show' could not be found for PostsController):
+  
+
+Rendered /home/igor/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.5ms)
+
+
+Started GET "/posts/4" for 127.0.0.1 at 2011-10-04 08:20:10 -0300
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 9ms (Views: 3.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/4" for 127.0.0.1 at 2011-10-04 08:20:15 -0300
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 9ms (Views: 3.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2011-10-04 08:20:24 -0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/_form.html.erb (5.0ms)
+Rendered posts/_posts.html.erb (2.1ms)
+Rendered posts/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 17ms (Views: 11.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/4" for 127.0.0.1 at 2011-10-04 08:20:26 -0300
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 9ms (Views: 3.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2011-10-04 08:20:42 -0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/_form.html.erb (23.1ms)
+Rendered posts/_posts.html.erb (2.2ms)
+Rendered posts/index.html.erb within layouts/application (28.0ms)
+Completed 200 OK in 38ms (Views: 30.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/4" for 127.0.0.1 at 2011-10-04 08:20:44 -0300
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 9ms (Views: 3.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2011-10-04 08:22:06 -0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/_form.html.erb (4.9ms)
+Rendered posts/_posts.html.erb (6.0ms)
+Rendered posts/index.html.erb within layouts/application (12.5ms)
+Completed 500 Internal Server Error in 21ms
+
+ActionView::Template::Error (undefined local variable or method `plano' for #<#<Class:0x000000045a5038>:0x000000045a3418>):
+    9:       <td><%= post.title %></td>
+    10:       <td><%= post.content %></td>
+    11:       <td><%= link_to "Edit", edit_post_path(post), :remote => true %></td>
+    12:       <td><%= link_to "Destroy", post_path(plano),  :confirm => 'Are you sure?', :method => :delete %></td>
+    13:     </tr>
+    14:   <% end %>
+    15:   </tbody>
+  app/views/posts/_posts.html.erb:12:in `block in _app_views_posts__posts_html_erb__2523361218203010140_34463920_828899916262487167'
+  app/views/posts/_posts.html.erb:7:in `each'
+  app/views/posts/_posts.html.erb:7:in `_app_views_posts__posts_html_erb__2523361218203010140_34463920_828899916262487167'
+  app/views/posts/index.html.erb:4:in `_app_views_posts_index_html_erb__3427683911534139353_36505020_3997223024757279991'
+
+Rendered /home/igor/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.8ms)
+Rendered /home/igor/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (21.2ms)
+Rendered /home/igor/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (43.8ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2011-10-04 08:22:12 -0300
+  Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/_form.html.erb (5.1ms)
+Rendered posts/_posts.html.erb (0.9ms)
+Rendered posts/index.html.erb within layouts/application (7.6ms)
+Completed 500 Internal Server Error in 16ms
+
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"posts"}):
+    9:       <td><%= post.title %></td>
+    10:       <td><%= post.content %></td>
+    11:       <td><%= link_to "Edit", edit_post_path(post), :remote => true %></td>
+    12:       <td><%= link_to "Destroy", post_path(@plano),  :confirm => 'Are you sure?', :method => :delete %></td>
+    13:     </tr>
+    14:   <% end %>
+    15:   </tbody>
+  app/views/posts/_posts.html.erb:12:in `block in _app_views_posts__posts_html_erb__2523361218203010140_39961680_828899916262487167'
+  app/views/posts/_posts.html.erb:7:in `each'
+  app/views/posts/_posts.html.erb:7:in `_app_views_posts__posts_html_erb__2523361218203010140_39961680_828899916262487167'
+  app/views/posts/index.html.erb:4:in `_app_views_posts_index_html_erb__3427683911534139353_40355320_3997223024757279991'
+
+Rendered /home/igor/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /home/igor/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.5ms)
+Rendered /home/igor/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.5ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2011-10-04 08:22:20 -0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/_form.html.erb (4.9ms)
+Rendered posts/_posts.html.erb (1.6ms)
+Rendered posts/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 18ms (Views: 11.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/4" for 127.0.0.1 at 2011-10-04 08:22:22 -0300
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 9ms (Views: 3.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2011-10-04 08:22:28 -0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/_form.html.erb (4.9ms)
+Rendered posts/_posts.html.erb (1.5ms)
+Rendered posts/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 17ms (Views: 11.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/4" for 127.0.0.1 at 2011-10-04 08:22:30 -0300
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 27ms (Views: 3.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2011-10-04 08:23:56 -0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/_form.html.erb (5.1ms)
+Rendered posts/_posts.html.erb (2.1ms)
+Rendered posts/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 18ms (Views: 11.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/4" for 127.0.0.1 at 2011-10-04 08:23:59 -0300
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 9ms (Views: 3.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2011-10-04 08:25:13 -0300
+  Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+Rendered posts/_form.html.erb (5.0ms)
+Rendered posts/_posts.html.erb (2.1ms)
+Rendered posts/index.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 18ms (Views: 11.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/4" for 127.0.0.1 at 2011-10-04 08:25:16 -0300
+  Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+Rendered posts/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 9ms (Views: 3.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/4/edit" for 127.0.0.1 at 2011-10-04 08:25:20 -0300
+  Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."id" = 4 LIMIT 1
+Completed 500 Internal Server Error in 9ms
+
+ActionView::MissingTemplate (Missing template posts/edit with {:handlers=>[:erb, :rjs, :builder, :rhtml, :rxml], :formats=>[:html], :locale=>[:en, :en]} in view paths "/home/igor/workspace/exercicios/ajax_on_rails/app/views"):
+  
+
+Rendered /home/igor/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.0.9/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.6ms)
